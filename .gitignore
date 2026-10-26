@@ -1,24 +1,28 @@
+# Data (large / not for git)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Model artifacts
+models/*
+!models/.gitkeep
+
+# MLflow
+mlruns/
+mlartifacts/
+mlflow.db
+
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
+.pytest_cache/
 .venv/
 venv/
-env/
+*.egg-info/
 
-# Data & Models (ignored as requested)
-data/
-models/
-mlruns/
-*.pkl
-*.joblib
-*.h5
-
-# Keep placeholder files in empty directories
-!data/**/.gitkeep
-!models/.gitkeep
-
-# IDE and OS files
+# Env / IDE / OS
+.env
 .idea/
 .vscode/
 .DS_Store
