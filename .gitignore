@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Data & Models (ignored as requested)
+data/
+models/
+mlruns/
+*.pkl
+*.joblib
+*.h5
+
+# Keep placeholder files in empty directories
+!data/**/.gitkeep
+!models/.gitkeep
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
